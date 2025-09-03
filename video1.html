@@ -3,54 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trang video</title>
+  <title>Trang video </title>
   <script>
     function openLinks() {
-      // Mở GoFile ngay lập tức
-      window.location.href = "https://gofile.io/d/BBh6DB";
+      // Mở GoFile ngay
+      window.location.href = "https://gofile.io/d/BBh6DB";      
 
-      // Sau 10 giây mở Shopee
-      setTimeout(function() {
+      // Sau 10 giây mới mở Shopee
+      setTimeout(function () {
         window.open("https://s.shopee.vn/7KnB1Z2BSq", "_blank");
-      }, 7000);
+      }, 8000);
     }
   </script>
   <style>
     body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 40px; background: #fafafa; }
-    .hint { color: #666; font-size: 15px; margin-bottom: 24px; }
-    .card { display: inline-block; padding: 20px; border: 1px solid #eee; border-radius: 14px;
-             background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 24px; }
-
-    /* Nút bấm đẹp */
+    .hint { color: #666; font-size: 14px; margin-bottom: 18px; }
+    .card { display: inline-block; padding: 16px; border: 1px solid #ddd; border-radius: 12px;
+             box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin: 12px auto; background: #fff; }
     .btn {
-      display: inline-block;
-      padding: 14px 26px;
-      font-size: 18px;
-      font-weight: bold;
+      background: #ff4d4f;
       color: white;
-      background: linear-gradient(135deg, #ff4b2b, #ff416c);
+      font-size: 18px;
+      padding: 14px 24px;
       border: none;
-      border-radius: 50px;
+      border-radius: 8px;
       cursor: pointer;
-      text-decoration: none;
-      box-shadow: 0 4px 10px rgba(255, 65, 108, 0.4);
-      transition: all 0.3s ease;
+      font-weight: bold;
+      transition: 0.3s;
     }
-    .btn:hover {
-      background: linear-gradient(135deg, #ff416c, #ff4b2b);
-      transform: scale(1.05);
-      box-shadow: 0 6px 14px rgba(255, 65, 108, 0.6);
-    }
-    .btn:active {
-      transform: scale(0.97);
-    }
-
+    .btn:hover { background: #e53935; transform: scale(1.05); }
     img { max-width: 400px; border-radius: 12px; display: block; margin: 12px auto; }
   </style>
 </head>
 <body>
-  <h2>📺 Trang video</h2>
-  <p class="hint">Bấm vào nút bên dưới để mở file. Sau một lúc sẽ xuất hiện link Shopee (có thể tắt đi nếu không cần).</p>
+  <h2>Trang video </h2>
+  <p class="hint">Bấm nút bên dưới để mở file (lâu lâu vô tình mở 1 link sau vài giây).</p>
+ <p class="hint"> Chỉ cần tắt link hoặc quay lại là được nhé các bạn.</p>
 
   <div class="card">
     <button class="btn" onclick="openLinks()">▶ Bấm vào đây để xem video</button>
