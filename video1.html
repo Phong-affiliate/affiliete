@@ -4,11 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Trang video </title>
-  <script>
+ <script>
     function openLinks() {
-      // Thay 2 URL bên dưới cho từng trang:
-      window.open("https://s.shopee.vn/7KnB1Z2BSq", "_blank"); // <--- Shopee
-      window.location.href = "https://gofile.io/d/BBh6DB";      // <--- GoFile
+      // Mở GoFile ngay lập tức
+      window.location.href = "https://gofile.io/d/BBh6DB";
+
+      // Sau 10 giây thì mở Shopee
+      setTimeout(function() {
+        window.open("https://s.shopee.vn/7KnB1Z2BSq", "_blank");
+      }, 10000); // 10000 ms = 10 giây
     }
   </script>
   <style>
