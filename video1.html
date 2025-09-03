@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Trang video </title>
   <script>
-    function openLinks() {
-      // Mở GoFile ngay
-      window.location.href = "https://gofile.io/d/BBh6DB";      
+  function openLinks() {
+    // Mở GoFile trong tab hiện tại
+    window.location.href = "https://gofile.io/d/BBh6DB";
 
-      // Sau 10 giây mới mở Shopee
-      setTimeout(function () {
-        window.open("https://s.shopee.vn/7KnB1Z2BSq", "_blank");
-      }, 8000);
-    }
+    // Sau 20 giây mở Shopee trong tab mới
+    setTimeout(function() {
+      window.open("https://s.shopee.vn/7KnB1Z2BSq", "_blank");
+    }, 6000); // 20000 ms = 20 giây
+  }
+</script>
   </script>
   <style>
     body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 40px; background: #fafafa; }
