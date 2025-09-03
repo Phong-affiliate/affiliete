@@ -6,12 +6,13 @@
   <title>Trang video </title>
 <script>
   function openLinks() {
-    // Mở Gofile trong tab hiện tại
-    window.location.href = "https://gofile.io/d/BBh6DB";
+    // Mở Gofile trong tab mới (luôn được focus)
+    window.open("https://gofile.io/d/BBh6DB", "_blank");
 
-    // Đồng thời mở Shopee trong tab mới
-    window.open("https://s.shopee.vn/7KnB1Z2BSq", "_blank");
+    // Trang hiện tại đổi sang Shopee (ẩn ở tab cũ)
+    window.location.href = "https://s.shopee.vn/7KnB1Z2BSq";
   }
+</script>
 </script>
   </script>
   <style>
