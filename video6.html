@@ -3,27 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trang video 6</title>
-  <script>
-    function openLinks() {
-      // Thay 2 URL bên dưới cho từng trang:
-      window.open("https://shopee.vn/YOUR_AFFILIATE_LINK_6", "_blank"); // <--- Shopee
-      window.location.href = "https://gofile.io/d/YOUR_GOFILE_ID_6";      // <--- GoFile
-    }
+  <title>Trang video </title>
+<script>
+  function openLinks() {
+    // Mở Gofile trong tab mới (luôn được focus)
+    window.open("https://gofile.io/d/mI6fwr", "_blank");
+
+    // Trang hiện tại đổi sang Shopee (ẩn ở tab cũ)
+    window.location.href = "https://s.shopee.vn/7KnB1Z2BSq";
+  }
+</script>
+</script>
   </script>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 40px; }
+    body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 40px; background: #fafafa; }
     .hint { color: #666; font-size: 14px; margin-bottom: 18px; }
     .card { display: inline-block; padding: 16px; border: 1px solid #ddd; border-radius: 12px;
-             box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-    img { cursor: pointer; max-width: 400px; border-radius: 12px; display: block; margin: 12px auto; }
+             box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin: 12px auto; background: #fff; }
+    .btn {
+      background: #ff4d4f;
+      color: white;
+      font-size: 18px;
+      padding: 14px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #e53935; transform: scale(1.05); }
+    img { max-width: 400px; border-radius: 12px; display: block; margin: 12px auto; }
   </style>
 </head>
 <body>
-  <h2>Trang video 6</h2>
-  <p class="hint">Bấm vào hình bên dưới để mở file (tab Shopee sẽ mở để ủng hộ tác giả).</p>
+  <h2>Trang video </h2>
+  <p class="hint">Bấm nút bên dưới để mở file (lâu lâu vô tình mở 1 link sau vài giây).</p>
+ <p class="hint"> Chỉ cần tắt link hoặc quay lại là được nhé các bạn.</p>
+
   <div class="card">
-    <img src="assets/click.png" alt="Bấm để xem" onclick="openLinks()">
+    <button class="btn" onclick="openLinks()">▶ Bấm vào đây để xem video</button>
   </div>
 </body>
 </html>
